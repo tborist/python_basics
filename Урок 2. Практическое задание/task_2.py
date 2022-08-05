@@ -11,5 +11,14 @@
 Введите целые числа через пробел: 1 2 3
 Результат: 2 1 3
 """
-list_1 = list(input("ведите значения: "))
-print(list_1)
+list_1 = input("ведите значения: ").split()
+print(f"Ваш список: ", list_1)
+for i in list_1:
+    a = list_1.index(i)
+    if a % 2 != 0:
+        list_1[a], list_1[a - 1] = list_1[a - 1], list_1[a]
+print(f"Ваш список после обработки: ",list_1)
+
+#my_list = input("Введите целые числа через пробел ").split()
+#my_list[:-1:2], my_list[1::2] = my_list[1::2], my_list[:-1:2]
+#print(my_list)
