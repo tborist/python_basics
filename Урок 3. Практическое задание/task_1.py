@@ -19,6 +19,8 @@ Process finished with exit code 0
 """
 first_num = int(input("Введите первое число: "))
 second_num = int(input("Введите второе число: "))
+
+
 def div_func(arg_1, arg_2):
     try:
         arg_1/arg_2
@@ -26,4 +28,6 @@ def div_func(arg_1, arg_2):
         print("Деление на ноль недопустимо!")
         exit()
     return arg_1 / arg_2
+
+
 print("Результат деления: ", div_func(first_num, second_num))
