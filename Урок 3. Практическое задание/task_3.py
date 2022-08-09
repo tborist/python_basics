@@ -11,7 +11,8 @@ def my_func_sort(arg_1, arg_2, arg_3):
     """С использованием sort"""
     my_list = [arg_1, arg_2, arg_3]
     my_list.sort()
-    sum_max = my_list[1] + my_list[2]
+    my_list_length = len(my_list)
+    sum_max = my_list[my_list_length - 1] + my_list[my_list_length - 2]
     return sum_max
 
 
