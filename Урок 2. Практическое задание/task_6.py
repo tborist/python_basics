@@ -25,3 +25,29 @@
 “ед”: [“шт.”]
 }
 """
+my_list = []
+list2 = []
+list3 = []
+list4 = []
+list5 = []
+list6 = []
+while input("Добавить строку? ") == "да":
+    a = input('Введите номер')
+    b = input('Введите название')
+    c = input('Введите цену')
+    d = input('Введите количество')
+    e = input('Единицы измерения')
+    dict1 = {'Название':b, 'Цена':c, 'Количество':d, 'Единицы':e}
+    my_list.append((a, dict1))
+#    list2.append(a)
+    list3.append(dict1.get('Название'))
+    list4.append(dict1.get('Цена'))
+    list5.append(dict1.get('Количество'))
+    list6.append(dict1.get('Единицы'))
+for i in enumerate(my_list, 1):
+    print(i)
+#print(list2)
+print("Названия", list3)
+print("Цены", list4)
+print("Количества", list5)
+print("Единицы", list6)
