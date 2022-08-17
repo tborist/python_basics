@@ -6,3 +6,33 @@
     символ введен после нескольких чисел, то вначале нужно добавить сумму этих чисел к полученной
     ранее сумме и после этого завершить программу.
 """
+
+
+
+def my_func(sss = 0, x = None):
+    my_list = input('Введите числа через пробел: ').split()
+    print(my_list)
+    if x != 1:
+        for i in my_list:
+            if i != "!":
+                sss = sss + int(i)
+            else:
+                print("Введен спец. символ, завершение. Сумма равна ", sss + sss1)
+                exit()
+    else:
+        for i in my_list:
+            if i != "!":
+                sss = sss + int(i)
+                x = 1
+
+    print("Сумма равна", sss)
+    return sss
+x = 0
+sss=0
+sss1=0
+while x == 0:
+    sss1 = sss1 + my_func(sss,x)
+    print(sss1)
+
+
+

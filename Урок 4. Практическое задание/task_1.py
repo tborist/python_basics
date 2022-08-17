@@ -6,3 +6,10 @@
 Для выполнения расчета для конкретных значений
 необходимо запускать скрипт с параметрами.
 """
+from sys import argv
+script_name, a, b, c = argv
+print("A*B+C=", int(a) * int(b) + int(c))
+
+
+
+

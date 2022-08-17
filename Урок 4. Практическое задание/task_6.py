@@ -12,3 +12,25 @@
 Во втором также необходимо предусмотреть условие,
 при котором повторение элементов списка будет прекращено.
 """
+from itertools import count, cycle
+
+a = 3
+b = 10
+counter = count(int(a))
+i = int(a)
+while i <= int(b):
+    print(next(counter))
+    i += 1
+
+print("")
+
+c = 25
+r = 0
+my_list =["one","two","three","four","five"]
+iter = cycle(my_list)
+
+for i in cycle(my_list):
+    print(i)
+    r += 1
+    if r > c:
+        break
