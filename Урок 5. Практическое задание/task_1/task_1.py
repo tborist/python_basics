@@ -9,7 +9,7 @@ while x != "":
     x = input("Введите строку для записи в файл: ")
     if x != "":
         my_file.write(x)
-        my_file.write("\n")
+        #my_file.write("\n")
     else:
         my_file.close()
         exit(0)
